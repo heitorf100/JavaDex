@@ -48,13 +48,7 @@ public class Pokemon {
         this.vida = vida;
         this.peso = peso;
         this.altura = altura;
-        this.evolui = evolui;
-  
-        
-    }
-    
-    public String getNome(){
-        return this.nome;
+        this.evolui = evolui;   
     }
 }
 
