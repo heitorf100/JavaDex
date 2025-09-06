@@ -12,6 +12,8 @@ public class main {
 
     public static void main(String[] args) {
         //Pokemon(Numero, Nome, Tipo1, Tipo2?, vida, peso, altura, evolui)
-        Pokemon novoPoke = new Pokemon(1, "Pikachu","Eletrico", 35, 6,40,true);
-    }
+
+        Pokemon pikachu = new Pokemon(25, "Pikachu","Eletrico", 35, 6.0f, 40,true);
+
+        }
 }
