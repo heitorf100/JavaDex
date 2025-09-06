@@ -50,6 +50,22 @@ public class Pokemon {
         this.altura = altura;
         this.evolui = evolui;   
     }
+    
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    
+    public int getNumero(){
+        return this.numero;
+    }
+    
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+    
+    
+
+    
 }
 
 
