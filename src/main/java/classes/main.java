@@ -3,7 +3,9 @@
  */
 
 package classes;
-
+import database.database;
+import java.util.ArrayList;
+import java.util.List;
 /**
  *
  * @author pedro
@@ -11,11 +13,11 @@ package classes;
 public class main {
 
     public static void main(String[] args) {
-        //Pokemon(Numero, Nome, Tipo1, Tipo2?, vida, peso, altura, evolui)
-        
-        Pokemon novoPokemon = new Pokemon(155, "Cyndaquil", "Fogo", 60, 7.9f, 50, true);
-        System.out.println(novoPokemon.getNumero() + "\n" + novoPokemon.getNome() + "\n" +novoPokemon.getTipo1() + "\n" +novoPokemon.getVida()
-        +"\n" + novoPokemon.getPeso() + "\n" +novoPokemon.getAltura());
+       database bd = new database();
+       List<Pokemon> pokemons;      
+       Pokemon achado = bd.buscaPokemon(155);
+       System.out.println(achado.toString());
         
     }
+    
 }

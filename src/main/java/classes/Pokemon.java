@@ -76,7 +76,11 @@ public class Pokemon {
     }
 
     public String getTipo2() {
-        return tipo2;
+        if(this.tipo2 == null) {
+            return this.tipo1;
+        }else{
+            return this.tipo1 + " / " + this.tipo2;
+        }
     }
 
     public void setTipo2(String tipo2) {
@@ -115,7 +119,11 @@ public class Pokemon {
         this.evolui = evolui;
     }
 
-    
+   
+    @Override
+    public String toString(){
+        return this.nome + " - " + this.numero;
+    }
     
     
 }
